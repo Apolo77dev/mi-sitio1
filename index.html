@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="logo.png">
+    <title>Ferrotodo</title>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        </script>
+        
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+              <img src="logo.f.png" alt="Ferrotodo" style="height: 60px;">
+            </a>
+          </div>
+          
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#comunicar">Contactanos</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </nav>
+
+    
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="ferre5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-warning">
+              <h3>VARIEDAD DE HERRAMIENTAS A TU ALCANCE</h3>
+              <p>Encuentra todo tip de herramientas para tus proyectos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="ferre7,jpg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>ATENCION PERSONALIZADA</h3>
+              <p>Recibe orientacion para que tu proyecto sea todo un exito.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="ferre1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-warning">
+              <h3>ENCUENTRA LA MARCA QUE DESEES</h3>
+              <p>Podras encontrar herramientas y productos de marcas reconocidas.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <br>
+
+    
+    <section id="productos">
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+            <div class="card" style="width: 18rem;">                  
+              <img src="herramientaE1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Herramientas Electricas</h5>
+                <p class="card-text">Encuentra todo tipo de herramientas electricas para facilitar tu trabajo o proyecto.</p>
+                <a href="pagina 1.html" class="btn btn-primary">Entrar</a>
+              </div>
+            </div>
+          
+            <div class="card" style="width: 18rem;">
+              <img src="herramientas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Herramientas manuales</h5>
+                <p class="card-text">Encuentra todo tipo de herramientas manuales.</p>
+                <a href="pagina 2.html" class="btn btn-primary">Entrar</a>
+              </div>
+            </div>
+          
+            <div class="card" style="width: 18rem;">
+              <img src="pintura.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pintura y material de Contruccion</h5>
+                <p class="card-text">Encuentra todo tipo de pintura y material para tu proyecto.</p>
+                <a href="pagina 3.html" class="btn btn-primary">Entrar</a>
+              </div>
+            </div>
+          </div>
+    </section>
+<br>
+    
+    <footer class="bg-dark text-white text-center small" style="line-height: 1;">
+        <div class="container py-1">
+          <p class="mb-0">&copy; 2025 Mi Sitio Web. Todos los derechos reservados.
+            <a href="#" class="text-white ms-2">Política de Privacidad</a>
+            <a href="#" class="text-white ms-2">Contacto</a>
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
